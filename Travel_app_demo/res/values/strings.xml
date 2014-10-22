@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">驾驾吁~</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_database_demo">DatabaseDemo</string>
+
+    <string name="one_button_generator">Generate your bookings</string>
+    <string name="depart_date">Departure date</string>
+    <string name="finish_button">Finish adding</string>
+    <string name="schedule_button">Your Schedule</string>
+    <string name="schedule_label">Schedule</string>
+    <string name="from_label">From</string>
+    <string name="to_label">To</string>
+    <string name="depar_label">Depart:</string>
+    <string name="return_label">Return:</string>
+    <string name="date_label">Date</string>
+    <string name="reset_date">Reset Date</string>
+    <string name="depart_date_label_spinner">Date of departure</string>
+    <string name="website_name">jajayu.com</string>
+     
+    <string-array name="cityName">
+	    <item name="amsterdam">Amsterdam</item>
+	    <item>London</item>
+	    <item>Paris</item>
+	    <item>Rome</item>
+	   	<item>Cairo</item> 
+	</string-array>
+    
+    <string-array name="cityNameM">
+	    <item name="amsterdam">阿姆斯特丹</item>
+	    <item>伦敦</item>
+	    <item>巴黎</item>
+	    <item>罗马</item>
+	   	<item>开罗</item> 
+	</string-array>
+	
+    <string-array name="departCityName">
+	    <item>Guangzhou</item>
+	    <item>Shenzhen</item>
+	    <item>Hongkong</item>
+	</string-array>
+	
+    <string-array name="departCityNameM">
+	    <item>广州</item>
+	    <item>深圳</item>
+	    <item>香港</item>
+	</string-array>
+	
+</resources>

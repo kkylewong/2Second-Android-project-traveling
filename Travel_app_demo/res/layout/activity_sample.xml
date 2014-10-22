@@ -1,0 +1,515 @@
+<com.widgets.FlyOutContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+</LinearLayout>
+    -->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="#888888"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/schedule_label"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/depar_label"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/d_flight" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/from_label"
+                        android:textColor="@color/dark_red" />
+
+                    <TextView
+                        android:id="@+id/scheduleFromCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#000000"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/to_label"
+                        android:textColor="@color/dark_red" />
+
+                    <TextView
+                        android:id="@+id/scheduleToCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#000000"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/scheduleDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#000000"
+                        android:text="@string/date_label" />
+
+                    <TextView
+                        android:id="@+id/scheduleFlightInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Info" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/hotelListViewFromDB"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textView212"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/return_label"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <ImageView
+                        android:id="@+id/imageView313"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/a_flight" />
+
+                    <TextView
+                        android:id="@+id/textView91"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/from_label"
+                        android:textColor="@color/dark_red" />
+
+                    <TextView
+                        android:id="@+id/scheduleFromCityBACK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#000000"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/textView111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/to_label"
+                        android:textColor="@color/dark_red" />
+
+                    <TextView
+                        android:id="@+id/scheduleToCityBACK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#000000"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/scheduleDateBACK"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#000000"
+                        android:text="@string/date_label" />
+
+                    <TextView
+                        android:id="@+id/scheduleFlightInfoBACK"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="info" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                        android:id="@+id/resetDateBtn"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reset_date" 
+                        android:visibility="invisible"/>
+                
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mainpagebackground"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/mainImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal" >
+
+                        <!-- <requestFocus /> -->
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1" >
+
+                <ImageView
+                    android:id="@+id/imageEarth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/earthearth" />
+
+                <ImageButton
+                    android:id="@+id/imageBtnMagfinier"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible"
+                    android:src="@drawable/magnifier" />
+                <!-- android:visibility="invisible" -->
+                
+                <ImageButton
+                        android:id="@+id/imageButtonCityIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000"
+                         android:scaleType="fitCenter"
+                         android:visibility="invisible"
+                        android:src="@drawable/a_flight" />
+                <ImageButton
+                        android:id="@+id/imageButtonCityIcon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000"
+                         android:scaleType="fitCenter"
+                         android:visibility="invisible"
+                        android:src="@drawable/a_flight" />
+                <ImageButton
+                        android:id="@+id/imageButtonCityIcon3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000"
+                         android:scaleType="fitCenter"
+                         android:visibility="invisible"
+                        android:src="@drawable/a_flight" />
+                <ImageButton
+                        android:id="@+id/imageButtonCityIcon4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="#00000000"
+                         android:scaleType="fitCenter"
+                         android:visibility="invisible"
+                        android:src="@drawable/a_flight" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/horseYellow"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:text="@string/website_name"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.95" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/talkIconImageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/chats_icon" />
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal" >
+                        
+						<Spinner
+                            android:id="@+id/departCityEnterSpinner"
+                            android:layout_width="100dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:entries="@array/departCityName"
+                            android:gravity="center" />
+
+                        <Button
+                            android:id="@+id/dateSelectBtn"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/depart_date_label_spinner"
+                            android:textSize="30sp" />
+                        <!-- android:visibility="invisible" -->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal" >
+
+                        <Spinner
+                            android:id="@+id/destinationEnterSpinner"
+                            android:layout_width="100dp"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:entries="@array/cityName"
+                            android:visibility="invisible"
+                            android:gravity="center" />
+
+                        
+                        
+                        <EditText
+                            android:id="@+id/dayEnterEditText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="4"
+                            android:gravity="center"
+                            android:visibility="invisible"
+                            android:inputType="number" />
+                    </LinearLayout>
+                    
+                    <Button 
+                        android:id="@+id/bookingGeneratorButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:onClick="bookingGenerator"
+                        android:text="@string/one_button_generator"
+                        android:visibility="invisible"
+                        android:textSize="25sp" />
+
+                    
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/imageHorse"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00000000"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/horse1" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.47"
+                    android:orientation="vertical" >
+
+                    
+                    
+                    <Button
+                        android:id="@+id/toggleMenuBtn"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="34dp"
+                        android:onClick="toggleMenu"
+                        android:text="@string/schedule_button" />
+
+                    
+
+                    <TextView
+                        android:id="@+id/departDatetextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/toggleMenuBtn"
+                        android:layout_toRightOf="@+id/toggleMenuBtn"
+                        android:text="1"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/menu_level1"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/finishAddCity"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/departDatetextView"
+                        android:text="@string/finish_button" 
+                        android:visibility="invisible"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.widgets.FlyOutContainer>
